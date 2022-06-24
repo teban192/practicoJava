@@ -68,8 +68,8 @@ function PerimetroCirculo (radio) {
 //diametroCirculo * PI;
 //console.log("El perimetro es  de:" + PerimetroCirculo + "cm");
 //areaCirculo
-const areaCirculo = (radioCirculo*radioCirculo) * PI;
-console.log("El areaCirculo es  de:" + areaCirculo + "cm2");
+//const areaCirculo = (radioCirculo*radioCirculo) * PI;
+//console.log("El areaCirculo es  de:" + areaCirculo + "cm2");
 
 function areaCirculo (radio) {
     return (radio * radio) * PI;
