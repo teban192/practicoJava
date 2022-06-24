@@ -30,8 +30,12 @@ console.group("Triangulo")
 //console.log("La altura del triangulo es de:" + alturaTriangulo + "cm");
 
 function perimetroTriangulo (lado1,lado2, base) {
-    return lado1+lado2+base;
+    return lado1 + lado2 + base;
 
+}
+
+function areaTriangulo(base,altura){
+   return (base * altura) / 2;
 }
 //console.log("El perimetro del triangulo es de:" + perimetroTriangulo + "cm");
 
@@ -43,21 +47,33 @@ function perimetroTriangulo (lado1,lado2, base) {
  // codigo circulo
 console.group("Circulo")
 //radioCirculo
-const radioCirculo = 4;
-console.log("El radioCirculo es  de:" + radioCirculo + "cm");
+function diametroCirculo(radio){
+
+    return radio * 2;
+};
+//console.log("El radioCirculo es  de:" + radioCirculo + "cm");
 //diametroCirculo
-const diametroCirculo = radioCirculo * 2;
-console.log("El diametroCirculo es  de:" + diametroCirculo + "cm");
+//const diametroCirculo = radioCirculo * 2;
+//console.log("El diametroCirculo es  de:" + diametroCirculo + "cm");
 //PI
 const PI = Math.PI;
 console.log("El valor de PI es  de:" + PI);
 //PerimetroCirculo
-const PerimetroCirculo = diametroCirculo * PI;
-console.log("El perimetro es  de:" + PerimetroCirculo + "cm");
+function PerimetroCirculo (radio) {
+   const diametro = diametroCirculo(radio);
+   return diametro * PI;
+}
+
+
+//diametroCirculo * PI;
+//console.log("El perimetro es  de:" + PerimetroCirculo + "cm");
 //areaCirculo
 const areaCirculo = (radioCirculo*radioCirculo) * PI;
 console.log("El areaCirculo es  de:" + areaCirculo + "cm2");
 
+function areaCirculo (radio) {
+    return (radio * radio) * PI;
+ }
 
 
 console.groupEnd();
