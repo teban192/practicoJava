@@ -59,7 +59,7 @@ function diametroCirculo(radio){
 const PI = Math.PI;
 console.log("El valor de PI es  de:" + PI);
 //PerimetroCirculo
-function PerimetroCirculo (radio) {
+function perimetroCirculo (radio) {
    const diametro = diametroCirculo(radio);
    return diametro * PI;
 }
@@ -77,3 +77,6 @@ function areaCirculo (radio) {
 
 
 console.groupEnd();
+
+
+//Aqui interactuamos con el HTML
