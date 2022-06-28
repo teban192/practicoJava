@@ -37,6 +37,18 @@ function perimetroTriangulo (lado1,lado2, base) {
 function areaTriangulo(base,altura){
    return (base * altura) / 2;
 }
+
+
+function trianguloIsoceles(lado1,lado2,base){
+     if (lado1 == lado2 && lado1!= base){
+       const altura = Math.sqrt((lado1*lado2)-((base*base)/4))
+        return altura;
+    }
+    else{
+        return -1
+    }
+
+}
 //console.log("El perimetro del triangulo es de:" + perimetroTriangulo + "cm");
 
 //const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2 ;
@@ -93,4 +105,12 @@ function calcularAreaCuadrado(){
     const value = input.value;
     const area = areaCuadrado(value);
     alert(area);
+}
+
+function calcularAlturaTriangulo(){
+    const input = document.getElementById("InputTriangulo");
+    const value = input.value;
+    const myArray = value.split(",");
+    const altura = trianguloIsoceles(myArray[0],myArray[1],myArray[2]);
+    alert(altura);
 }
