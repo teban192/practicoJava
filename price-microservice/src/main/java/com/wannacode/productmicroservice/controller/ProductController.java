@@ -57,6 +57,12 @@ public class ProductController {
         productRepository.save(ProductEntity);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public String deleteBook(@PathVariable ("id") String id){
+        productRepository.deleteById(id);
+
+        return "Deleted Successfully";
+    }
 
 
 
